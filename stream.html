@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>G - Drive. Прямая трансляция</title>
+
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+
+  <meta property="og:image" content="img/favicon/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+
+<body class="body-stream">
+  <div class="stream">
+    <video id=stream-video class="video-js vjs-default-skin" poster="img/video1.jpg" controls>
+      <source
+              src="http://hls-01-megapolis.magonet.ru:80/megapolis/live.m3u8"
+              type="application/x-mpegURL">
+    </video>
+  </div>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+  <!-- <script src="js/videojs-contrib-hls.min.js"></script> -->
+  <script src="https://unpkg.com/video.js/dist/video.js"></script>
+  <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  <script src="js/stream.js"></script>
+</body>
+</html>
