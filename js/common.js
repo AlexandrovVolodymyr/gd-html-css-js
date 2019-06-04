@@ -1,15 +1,34 @@
 $(document).ready(function () {
+  /* скрытие поп-ап окна с плеером в момент скрола страницы */
+  window.onscroll = function() {
+    let currentPageHeight = $(window).scrollTop() + $(window).height();
+    let currentFooterLocation = $('.footer').position();
+
+    if (currentPageHeight > currentFooterLocation.top) {
+      $('.podkast.podkast-active').addClass('shifted');
+    } else {
+      $('.podkast.podkast-active').removeClass('shifted');
+    }
+  };
+  /* скрытие поп-ап окна с плеером в момент скрола страницы */
+
   /*iframe height*/
   let wIframe = $('.main-page-stream').width();
   let hIframe = wIframe / 1.7777;
   $('.main-page-stream').css('height', hIframe);
+  $('.main-page-video-trans').css('height', hIframe);
 
   window.addEventListener("resize", function() {
     let wIframe = $('.main-page-stream').width();
     let hIframe = wIframe / 1.7777;
     $('.main-page-stream').css('height', hIframe);
+    $('.main-page-video-trans').css('height', hIframe);
   });
   /*iframe height*/
+
+  /*golosovalka*/
+  $('.question').css('opacity', '1');
+  /*golosovalka*/
 
   //custom scroll video
   $(".video__aside").mCustomScrollbar({
@@ -64,6 +83,18 @@ $(document).ready(function () {
     }
   });
   //custom scroll video
+
+  /*scrollbar slider congrat*/
+  let amount = $('.l-congratulation__item').outerHeight();
+  $(".l-congratulation").mCustomScrollbar({
+    theme: "light-thick",
+    axis:"y",
+    scrollButtons: {
+      enable: true
+    },
+    snapAmount: 5.8,
+  });
+  /*/ scrollbar slider congrat*/
 
   $('.header-top__right .header__search').on('click', function(e) {
     $(this).hide();

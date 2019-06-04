@@ -33,36 +33,36 @@
 </head>
 
 <body class="body">
-<section class="header header-common">
-  <div class="header__container">
-    <div class="header__part">
-      <div class="header-top">
-        <div class="header-top__left">
-          <div class="header__location">
-            <img src="img/location.png" alt="location" class="header__location-img">
-            <div class="header__location-name"></div>
-          </div>
-          <div class="header__listen">
-            <div class="header__listen-digits">500</div>
-            <div class="header__listen-text">Слушателей онлайн</div>
-          </div>
-          <div class="header__live">
-            <div class='player'>
-              <div class='player__btns'>
-                <div class="icon-default icon-play">
-                </div>
-                <audio class="header-audio" controls>
-                  <source src="http://m4m128.hostingradio.ru:8074/m4m128.mp3" />
-                </audio>
-              </div>
-              <div class="player__text">Слушать эфир</div>
+  <section class="header header-common">
+    <div class="header__container">
+      <div class="header__part">
+        <div class="header-top">
+          <div class="header-top__left">
+            <div class="header__location">
+              <img src="img/location.png" alt="location" class="header__location-img">
+              <div class="header__location-name"></div>
             </div>
-          </div>
-          <div class="header__live-write">
-            <a class="write" data-fancybox data-src="#writeModal" href="javascript:;">
-              <div class="write__icon">
-                <!--<img src="img/write.png" alt="write">-->
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+            <div class="header__listen">
+              <div class="header__listen-digits">500</div>
+              <div class="header__listen-text">Слушателей онлайн</div>
+            </div>
+            <div class="header__live">
+              <div class='player'>
+                <div class='player__btns'>
+                  <div class="icon-default icon-play">
+                  </div>
+                  <audio class="header-audio" controls>
+                    <source src="http://m4m128.hostingradio.ru:8074/m4m128.mp3" />
+                  </audio>
+                </div>
+                <div class="player__text">Слушать эфир</div>
+              </div>
+            </div>
+            <div class="header__live-write">
+              <a class="write" data-fancybox data-src="#writeModal" href="javascript:;">
+                <div class="write__icon">
+                  <!--<img src="img/write.png" alt="write">-->
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                   <g>
                     <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828
                     C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033
@@ -74,19 +74,45 @@
                     <circle cx="9.091" cy="13.996" r="1.013"></circle>
                   </g>
                 </svg>
-              </div>
-              <div class="write__text">Написать в эфир</div>
+                </div>
+                <div class="write__text">Написать в эфир</div>
+              </a>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=79670200824" target="_blank" class="header-phone">
+              <img src="img/whatsapplogo.png" alt="whats up">
             </a>
           </div>
-          <a href="https://api.whatsapp.com/send?phone=79670200824" target="_blank" class="header-phone">
-            <img src="img/whatsapplogo.png" alt="whats up">
-          </a>
-          <a href="https://www.instagram.com/gpn.sparta" target="_blank" class="header__live_icon"><img src="img/icon-menu-new.svg" alt="logo-new"></a>
+          <div class="header-top__right">
+            <a href="#" class="header__search">
+              <img src="img/search_white.svg" alt="search">
+            </a>
+            <div class="search-part">
+              <label>
+                <input type="text" class="search-part__input" placeholder="Я ищу..." maxlength="30">
+                <img src="img/search-orange.png" class="search-orange" alt="search">
+                <img src="img/searchclose.png" class="search-part_close close-search" alt="close">
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="header-top__right">
-          <a href="#" class="header__search">
-            <img src="img/search_white.svg" alt="search">
-          </a>
+        <div class="header-bottom">
+          <a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+          <ul class="header-photos__pages-list pages-list">
+            <li class="pages-list__item">
+              <a href="" class="pages-list__link active">Новости</a>
+            </li>
+            <li class="pages-list__item">
+              <a href="" class="pages-list__link">Фото</a>
+            </li>
+            <li class="pages-list__item">
+              <a href="" class="pages-list__link">Видео</a>
+            </li>
+            <li class="pages-list__item">
+              <a href="" class="pages-list__link">Подкасты</a>
+            </li>
+          </ul>
+          <a href="#" class="header__search header__search-mobile"><img src="img/search_white.svg" alt="search"></a>
+          <!-- <a href="#" class="header__search header__search-mobile" data-toggle="modal" data-target="#searchModal"> -->
           <div class="search-part">
             <label>
               <input type="text" class="search-part__input" placeholder="Я ищу..." maxlength="30">
@@ -94,59 +120,25 @@
               <img src="img/searchclose.png" class="search-part_close close-search" alt="close">
             </label>
           </div>
+          <div class="header__burger" id="nav-icon1" data-toggle="modal" data-target="#menuModal"> <!-- data-toggle="modal" data-target="#menuModal" -->
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </div>
+          <div class="header__live-stream">
+            <a href="#" class="header__live-stream-link">
+              <img class="map-online stream-cover-need" src="" style="opacity: 0;">
+            </a>
+            <img src="img/live-icon.svg" alt="Online" class="header__live-stream-icon">
+            <div class="header__live-stream-text"><span class="stream-title-need"></span></div>
+          </div>
         </div>
       </div>
-      <div class="header-bottom">
-        <a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
-        <ul class="header-photos__pages-list pages-list">
-          <li class="pages-list__item">
-            <a href="" class="pages-list__link active">Новости</a>
-          </li>
-          <li class="pages-list__item">
-            <a href="" class="pages-list__link">Фото</a>
-          </li>
-          <li class="pages-list__item">
-            <a href="" class="pages-list__link">Видео</a>
-          </li>
-          <li class="pages-list__item">
-            <a href="" class="pages-list__link">Подкасты</a>
-          </li>
-          <li class="pages-list__item pages-list__item_icon">
-            <a href="https://www.instagram.com/gpn.sparta" target="_blank" class="pages-list__link pages-list__link_icon"><img src="img/icon-menu-new.svg" alt="click!"></a>
-          </li>
-        </ul>
-        <a href="#" class="header__search header__search-mobile"><img src="img/search_white.svg" alt="search"></a>
-        <!-- <a href="#" class="header__search header__search-mobile" data-toggle="modal" data-target="#searchModal"> -->
-        <div class="search-part">
-          <label>
-            <input type="text" class="search-part__input" placeholder="Я ищу..." maxlength="30">
-            <img src="img/search-orange.png" class="search-orange" alt="search">
-            <img src="img/searchclose.png" class="search-part_close close-search" alt="close">
-          </label>
-        </div>
-        <div class="header__burger" id="nav-icon1" data-toggle="modal" data-target="#menuModal"> <!-- data-toggle="modal" data-target="#menuModal" -->
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-        </div>
-        <div class="header__live-stream">
-          <a href="#" class="header__live-stream-link">
-            <img class="map-online stream-cover-need" src="" style="opacity: 0;">
-          </a>
-          <img src="img/live-icon.svg" alt="Online" class="header__live-stream-icon">
-          <div class="header__live-stream-text"><span class="stream-title-need"></span></div>
-        </div>
-      </div>
-    </div>
-    <div class="header__map">
-      <div class="embed-responsive embed-responsive-16by9 stream-wrapper"><i class="fas fa-play"></i></div>
-      <div class="embed-responsive embed-responsive-16by9 stream-embed" data-src='http://player.radio-box.org/v/megapolis/'>
-        <iframe src="" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0"></iframe>
-      </div>
-      <!-- <img src="img/map-main-empty.png" alt="Map"> -->
-      <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-      <svg version="1.1" id="mapimage" class="mapimage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301 145" style="enable-background:new 0 0 301 145;" xml:space="preserve">
+      <div class="header__map">
+        <!-- <img src="img/map-main-empty.png" alt="Map"> -->
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="mapimage" class="mapimage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301 145" style="enable-background:new 0 0 301 145;" xml:space="preserve">
           <style type="text/css">
             .st0{fill:none;}
             .st1{fill:#FFFFFF;}
@@ -3943,70 +3935,63 @@
               <circle id="BY_2_Animation" class="st0" cx="37.5" cy="62.25" r="21"/>
           </g>
         </svg>
-    </div>
-  </div>
-</section>
-
-<div class="video-trans main-page-video-trans">
-  <div class="embed-responsive embed-responsive-16by9 stream-wrapper"><i class="fas fa-play"></i></div>
-  <div class="embed-responsive embed-responsive-16by9 stream-embed" data-src='http://player.radio-box.org/v/megapolis/'>
-    <iframe src="" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0"></iframe>
-  </div>
-</div>
-
-<section class="content">
-  <div class="content__container">
-    <div class="content-main-wrapper">
-      <div class="content-main-slider" style="opacity: 0;">
-        <div class="content-main">
-          <img src="img/banner1.jpg" class="banner" alt="banner1">
-          <!-- <div class="content-main__program program">
-            <div class="program__text">Программа</div>
-            <div class="program__title">
-              «Хорошее <br> настроение»
-            </div>
-            <div class="program__days">по будням</div>
-            <div class="program__time">
-              <span class="program__time-number">4:00</span>
-              <span class="program__time-number">10:00</span>
-              <span class="program__time-number">13:000</span>
-              <span class="program__time-number">17:00</span>
-              <span class="program__time-number">22:00</span>
-              <span class="program__time-region">мск</span>
-            </div>
-            <div class="program__call">
-              <div class="program__call-text">Звони!</div>
-              <a href="tel: 8 800 200 11 06" class="program__call-number">8 800 200 11 06</a>
-            </div>
-          </div> -->
-        </div>
-        <div class="content-main second">
-          <img src="img/banner2.jpg" class="banner" alt="banner2">
-        </div>
-        <div class="content-main third">
-          <img src="img/banner3.jpg" class="banner" alt="banner3">
-        </div>
-        <div class="content-main fourth">
-          <img src="img/banner4.jpg" class="banner" alt="banner4">
-        </div>
-      </div>
-      <div class="row content-promo justify-content-between no-gutters">
-        <a href="#" class="col-3 content-promo__text">Главное спортивное событие лета!</a>
-        <a href="#" class="col-3 content-promo__text">G-Drive Racing победила в «Храме скорости»</a>
-        <a href="#" class="col-3 content-promo__text">
-          24 проекта наших коллег стали победителями волонтерского конкурса «Газпром нефти»
-        </a>
-        <a href="#" class="col-3 content-promo__text">
-          G-Drive Racing – в шестерке сильнейших после первой гонки сезона ELMS
-        </a>
       </div>
     </div>
-    <div class="content-side">
-      <div class="header__map header-mobile__map">
-        <!-- <img src="img/map-main-empty.png" alt="Map"> -->
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="mapimage" class="mapimage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301 145" style="enable-background:new 0 0 301 145;" xml:space="preserve">
+  </section>
+
+  <section class="content">
+    <div class="content__container">
+      <div class="content-main-wrapper">
+        <div class="content-main-slider" style="opacity: 0;">
+          <div class="content-main">
+            <img src="img/banner1.jpg" class="banner" alt="banner1">
+            <!-- <div class="content-main__program program">
+              <div class="program__text">Программа</div>
+              <div class="program__title">
+                «Хорошее <br> настроение»
+              </div>
+              <div class="program__days">по будням</div>
+              <div class="program__time">
+                <span class="program__time-number">4:00</span>
+                <span class="program__time-number">10:00</span>
+                <span class="program__time-number">13:000</span>
+                <span class="program__time-number">17:00</span>
+                <span class="program__time-number">22:00</span>
+                <span class="program__time-region">мск</span>
+              </div>
+              <div class="program__call">
+                <div class="program__call-text">Звони!</div>
+                <a href="tel: 8 800 200 11 06" class="program__call-number">8 800 200 11 06</a>
+              </div>
+            </div> -->
+          </div>
+          <div class="content-main second">
+            <img src="img/banner2.jpg" class="banner" alt="banner2">
+          </div>
+          <div class="content-main third">
+            <img src="img/banner3.jpg" class="banner" alt="banner3">
+          </div>
+          <div class="content-main fourth">
+            <img src="img/banner4.jpg" class="banner" alt="banner4">
+          </div>
+        </div>
+        <div class="row content-promo justify-content-between no-gutters">
+          <a href="#" class="col-3 content-promo__text">Главное спортивное событие лета!</a>
+          <a href="#" class="col-3 content-promo__text">G-Drive Racing победила в «Храме скорости»</a>
+          <a href="#" class="col-3 content-promo__text">
+            24 проекта наших коллег стали победителями волонтерского конкурса «Газпром нефти»
+          </a>
+          <a href="#" class="col-3 content-promo__text">
+            G-Drive Racing – в шестерке сильнейших после первой гонки сезона ELMS
+          </a>
+        </div>
+      </div>
+      <div class="content-side">
+        <div class="header__map header-mobile__map">
+          <!-- <img src="img/map-main-empty.png" alt="Map"> -->
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="mapimage" class="mapimage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 301 145" style="enable-background:new 0 0 301 145;" xml:space="preserve">
             <style type="text/css">
               .st0{fill:none;}
               .st1{fill:#FFFFFF;}
@@ -7803,19 +7788,19 @@
                 <circle id="BY_2_Animation" class="st0" cx="37.5" cy="62.25" r="21"/>
             </g>
           </svg>
-      </div>
-      <div class="content-side__congratulation congratulation">
-        <div class="congratulation__day">20 мая</div>
-        <div class="congratulation__title">Поздравляем с Днем Рождения!</div>
-        <div class="congratulation__arrows">
-          <div class="congratulation__arrows-wrap">
-            <span class="slick-next-arrow"><img src="img/congrat-arrow-top.png" alt="arrow top"></span>
-            <span class="slick-prev-arrow"><img src="img/congrat-arrow-bottom.png" alt="arrow bottom"></span>
-          </div>
         </div>
-        <ul class="l-congratulation">
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+        <div class="content-side__congratulation congratulation">
+          <div class="congratulation__day">20 мая</div>
+          <div class="congratulation__title">Поздравляем с Днем Рождения!</div>
+          <div class="congratulation__arrows">
+            <div class="congratulation__arrows-wrap">
+              <span class="slick-next-arrow"><img src="img/congrat-arrow-top.png" alt="arrow top"></span>
+              <span class="slick-prev-arrow"><img src="img/congrat-arrow-bottom.png" alt="arrow bottom"></span>
+            </div>
+          </div>
+          <ul class="l-congratulation">
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                 <g>
                   <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
                   <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
@@ -7823,14 +7808,14 @@
                   <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
                 </g>
               </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
                 <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
                   Ирина Егорова 1
                 </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                 <g>
                   <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
                   <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
@@ -7838,167 +7823,167 @@
                   <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
                 </g>
               </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
                   <span href="#" class="congratulation-list__item--text" data-attr="Андрей Семенов" data-id="">
                     Андрей Семенов
                   </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-          <li class="l-congratulation__item">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
-                <g>
-                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
-                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
-                </g>
-              </svg>
-            <a data-fancybox data-src="#congratModal" href="javascript:;">
-                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
-                  Ирина Егорова 1
-                </span>
-            </a>
-          </li>
-        </ul>
-        <div class="congratulation-list" style="opacity: 0;">
-          <div class="item">
-            <div class="congratulation-list__item">
+              </a>
+            </li>
+            <li class="l-congratulation__item">
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+            <li class="l-congratulation__item">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"></path>
+                  <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="16.5" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                  <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"></circle>
+                </g>
+              </svg>
+              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
+                  Ирина Егорова 1
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="congratulation-list" style="opacity: 0;">
+            <div class="item">
+              <div class="congratulation-list__item">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                   <g>
                     <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"/>
                     <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"/>
@@ -8006,16 +7991,16 @@
                     <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"/>
                   </g>
                 </svg>
-              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <a data-fancybox data-src="#congratModal" href="javascript:;">
                   <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова 1" data-id="">
                     Ирина Егорова 1
                   </span>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="congratulation-list__item">
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+            <div class="item">
+              <div class="congratulation-list__item">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                   <g>
                     <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"/>
                     <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"/>
@@ -8023,19 +8008,19 @@
                     <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"/>
                   </g>
                 </svg>
-              <!--<a href="#" class="congratulation-list__item--text">-->
-              <!--Ирина Егорова-->
-              <!--</a>-->
-              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <!--<a href="#" class="congratulation-list__item--text">-->
+                  <!--Ирина Егорова-->
+                <!--</a>-->
+                <a data-fancybox data-src="#congratModal" href="javascript:;">
                   <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова" data-id="">
                     Ирина Егорова
                   </span>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="congratulation-list__item">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+            <div class="item">
+              <div class="congratulation-list__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                   <g>
                     <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"/>
                     <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"/>
@@ -8043,19 +8028,19 @@
                     <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"/>
                   </g>
                 </svg>
-              <!--<a href="#" class="congratulation-list__item--text" data-attr="Андрей Семенов">-->
-              <!--Андрей Семенов-->
-              <!--</a>-->
-              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <!--<a href="#" class="congratulation-list__item--text" data-attr="Андрей Семенов">-->
+                  <!--Андрей Семенов-->
+                <!--</a>-->
+                <a data-fancybox data-src="#congratModal" href="javascript:;">
                   <span href="#" class="congratulation-list__item--text" data-attr="Андрей Семенов" data-id="">
                     Андрей Семенов
                   </span>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="congratulation-list__item">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+            <div class="item">
+              <div class="congratulation-list__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                   <g>
                     <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"/>
                     <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"/>
@@ -8063,19 +8048,19 @@
                     <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"/>
                   </g>
                 </svg>
-              <!--<a href="#" class="congratulation-list__item--text" da>-->
-              <!--Константин Калиновский-->
-              <!--</a>-->
-              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <!--<a href="#" class="congratulation-list__item--text" da>-->
+                  <!--Константин Калиновский-->
+                <!--</a>-->
+                <a data-fancybox data-src="#congratModal" href="javascript:;">
                   <span href="#" class="congratulation-list__item--text" data-attr="Константин Калиновский" data-id="">
                     Константин Калиновский
                   </span>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="congratulation-list__item">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
+            <div class="item">
+              <div class="congratulation-list__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px">
                   <g>
                     <path d="M7.282,32.706c-0.081,0-0.163-0.02-0.237-0.06c-0.162-0.087-0.263-0.257-0.263-0.44v-7.124C2.405,22.806,0,18.821,0,13.828   C0,6.112,7.093,0.294,16.5,0.294S33,6.112,33,13.828c0,7.715-7.093,13.533-16.5,13.533c-0.309,0-0.612-0.017-0.916-0.033   l-0.02-0.001l-8.007,5.296C7.474,32.678,7.378,32.706,7.282,32.706z M16.5,1.294C7.664,1.294,1,6.683,1,13.828   c0,3.323,1.128,7.842,6.503,10.499c0.17,0.084,0.278,0.258,0.278,0.448v6.501l7.369-4.874c0.09-0.06,0.199-0.095,0.302-0.082   l0.186,0.01c0.286,0.016,0.571,0.031,0.861,0.031c8.836,0,15.5-5.388,15.5-12.533S25.336,1.294,16.5,1.294z" fill="#c3c3c3"/>
                     <circle cx="23.909" cy="13.996" r="1.013" fill="#c3c3c3"/>
@@ -8083,559 +8068,549 @@
                     <circle cx="9.091" cy="13.996" r="1.013" fill="#c3c3c3"/>
                   </g>
                 </svg>
-              <!--<a href="#" class="congratulation-list__item--text">-->
-              <!--Ирина Егорова-->
-              <!--</a>-->
-              <a data-fancybox data-src="#congratModal" href="javascript:;">
+                <!--<a href="#" class="congratulation-list__item--text">-->
+                  <!--Ирина Егорова-->
+                <!--</a>-->
+                <a data-fancybox data-src="#congratModal" href="javascript:;">
                   <span href="#" class="congratulation-list__item--text" data-attr="Ирина Егорова" data-id="">
                     Ирина Егорова
                   </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div class="quest_active" id="num_21">1</div>
+          <div class="question_title">Как часто вы слушаете G-Drive Radio?</div>
+          <div class="question_ul_cont">
+            <ul>
+              <li class="question_variant" onclick="">
+                <div class="var">Каждый день</div>
+                <div id="pre_col_1" class="per_col">
+                  <span class="question-res">114 голосов</span>
+                  <label for="radio" class="question-check">
+                    <input id="radio" name="question" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="var1" class="percent"></div>
+              </li>
+              <li class="question_variant" onclick="">
+                <div class="var">Несколько раз <br> в неделю</div>
+                <div id="pre_col_2" class="per_col">
+                  <span class="question-res">39 голосов</span>
+                  <label for="radio2" class="question-check">
+                    <input id="radio2" name="question" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="var2" class="percent"></div>
+              </li>
+              <li class="question_variant" onclick="">
+                <div class="var">От случая к случаю</div>
+                <div id="pre_col_3" class="per_col">
+                  <span class="question-res">23 голосов</span>
+                  <label for="radio3" class="question-check">
+                    <input id="radio3" name="question" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="var3" class="percent"></div>
+              </li>
+              <li class="question_variant" onclick="">
+                <div class="var">Только прямые <br> эфиры мероприятий</div>
+                <div id="pre_col_4" class="per_col">
+                  <span class="question-res" style="opacity: 1;">8 голосов</span>
+                  <label for="radio4" class="question-check" style="display: none;">
+                    <input id="radio4" name="question" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="var4" class="percent" style="background: #f4a98c; width: 27%;"></div>
+              </li>
+              <li class="question_variant" onclick="">
+                <div class="var">Не слушаю</div>
+                <div id="pre_col_5" class="per_col">
+                  <span class="question-res">20 голосов</span>
+                  <label for="radio5" class="question-check">
+                    <input id="radio5" name="question" type="radio">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div id="var5" class="percent"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--<div class="countdown" data-time="2018, 25, 9">-->
+          <!--<div class="countdown__text">ДО ГОНКИ</div>-->
+          <!--<div class="countdown__text-big">-->
+            <!--«6 ЧАСОВ СПА» FIA WEC-->
+          <!--</div>-->
+          <!--<div class="timer">-->
+            <!--<span class="days"></span>-->
+            <!--<span class="delimiter">:</span>-->
+            <!--<span class="hours"></span>-->
+            <!--<span class="delimiter">:</span>-->
+            <!--<span class="minutes"></span>-->
+            <!--&lt;!&ndash;<span class="delimiter">:</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="seconds"></span>&ndash;&gt;-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </section>
+
+  <section class="section-mobile">
+    <div class="content-promo-mobile">
+      <div class="slider-part">
+        <div class="item">
+          <a href="#" class="content-promo-mobile__text">
+            <span>
+              Главное спортивное событие лета!
+            </span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="content-promo-mobile__text">
+            <span>G-Drive Racing победила в «Храме скорости»</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="content-promo-mobile__text">
+            <span>24 проекта наших коллег стали победителями волонтерского конкурса «Газпром нефти»</span>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" class="content-promo-mobile__text">
+            <span>G-Drive Racing – в шестерке сильнейших после первой гонки сезона ELMS</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--<div id="makeMeScrollable" class="content-promo-mobile">-->
+      <!--<a href="#" class="content-promo-mobile__text">-->
+        <!--<span>-->
+          <!--Главное спортивное событие лета!-->
+        <!--</span>-->
+      <!--</a>-->
+      <!--<a href="#" class="content-promo-mobile__text">-->
+        <!--<span>G-Drive Racing победила в «Храме скорости»</span>-->
+      <!--</a>-->
+      <!--<a href="#" class="content-promo-mobile__text">-->
+        <!--<span>24 проекта наших коллег стали победителями волонтерского конкурса «Газпром нефти»</span>-->
+      <!--</a>-->
+      <!--<a href="#" class="content-promo-mobile__text">-->
+        <!--<span>G-Drive Racing – в шестерке сильнейших после первой гонки сезона ELMS</span>-->
+      <!--</a>-->
+    <!--</div>-->
+  </section>
+
+  <div class="stream main-page-stream">
+    <!-- <video id=stream-video class="video-js vjs-default-skin" poster="img/video1.jpg" controls>
+      <source
+              src="http://hls-01-megapolis.magonet.ru:80/megapolis/live.m3u8"
+              type="application/x-mpegURL">
+    </video> -->
+    <div class="embed-responsive embed-responsive-16by9 stream-wrapper"><i class="far fa-play-circle"></i></div>
+    <div class="embed-responsive embed-responsive-16by9 stream-embed" data-src='http://player.radio-box.org/v/megapolis/'>
+      <iframe src=""></iframe>
+    </div>
+  </div>
+
+  <section class="news">
+    <div class="news__container">
+      <div class="news__category">
+        <h2 class="news__title">Новости</h2>
+        <a href="news-page.html" class="news__link">Все новости <img src="img/arrow.png" alt="news"></a>
+      </div>
+      <div class="row no-gutters news-grid justify-content-between">
+        <div class="news-grid__content">
+          <div class="news-grid__images--top">
+            <div class="icons-main-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 сентября</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <span class="news-grid__label">топ новость</span>
+            <div href="#" class="news-grid__text">
+              <span href="#" class="news-grid__tag">спорт</span>
+              <span href="#" class="news-grid__tag">спорт</span>
+              <span href="#" class="news-grid__tag">спорт</span>
+              <a href="#">G-Drive Racing готова к старту сезонаG-Drive Racing готова к старту сезона</a>
+            </div>
+            <a class="news-grid__link-img" href="#"><img src="img/main-image-top.jpg" alt="car"></a>
+          </div>
+          <div class="news-grid__images--item">
+            <div class="icons-main-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 мая</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <div class="news-grid__promo">
+              <a href="#"><img src="img/news1.png" alt="news"></a>
+            </div>
+            <div class="news-grid__description">
+              <a href="#" class="news-grid__tag">спорт</a>
+              <a href="#" class="news-grid__text">
+                Волонтеры предприятий ДРП познакомили особенных детей
+                с адаптивными видами спорта
+              </a>
+            </div>
+          </div>
+          <div class="news-grid__images--item">
+            <div class="icons-main-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 сентября</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <div class="news-grid__promo">
+              <a href="#"><img src="img/news2.png" alt="news"></a>
+            </div>
+            <div class="news-grid__description">
+              <a href="#" class="news-grid__tag">спорт</a>
+              <a href="#" class="news-grid__text">
+                Топливо G-Drive 100 выходит
+                на рынок Центрального региона
+              </a>
+            </div>
+          </div>
+          <div class="news-grid__images--item">
+            <div class="icons-main-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 сентября</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <div class="news-grid__promo">
+              <a href="#"><img src="img/news3.png" alt="news"></a>
+            </div>
+            <div class="news-grid__description">
+              <a href="#" class="news-grid__tag">спорт</a>
+              <a href="#" class="news-grid__text">
+                На АЗС «Газпромнефть»
+                стартовала акция
+                «Рвани в Ле-Ман»
+              </a>
+            </div>
+          </div>
+          <div class="news-grid__images--item">
+            <div class="icons-main-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 сентября</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <div class="news-grid__promo">
+              <a href="#"><img src="img/news4.png" alt="news"></a>
+            </div>
+            <div class="news-grid__description">
+              <a href="#" class="news-grid__tag">спорт</a>
+              <a href="#" class="news-grid__text">
+                G-Drive Racing – в шестерке
+                сильнейших после первой гонки
+                сезона ELMS
               </a>
             </div>
           </div>
         </div>
-      </div>
-      <!--<div class="question">-->
-      <!--<div class="quest_active" id="num_21">1</div>-->
-      <!--<div class="question_title">Как часто вы слушаете G-Drive Radio?</div>-->
-      <!--<div class="question_ul_cont">-->
-      <!--<ul>-->
-      <!--<li class="question_variant" onclick="">-->
-      <!--<div class="var">Каждый день</div>-->
-      <!--<div id="pre_col_1" class="per_col">-->
-      <!--<span class="question-res">114 голосов</span>-->
-      <!--<label for="radio" class="question-check">-->
-      <!--<input id="radio" name="question" type="radio">-->
-      <!--<span class="checkmark"></span>-->
-      <!--</label>-->
-      <!--</div>-->
-      <!--<div id="var1" class="percent"></div>-->
-      <!--</li>-->
-      <!--<li class="question_variant" onclick="">-->
-      <!--<div class="var">Несколько раз <br> в неделю</div>-->
-      <!--<div id="pre_col_2" class="per_col">-->
-      <!--<span class="question-res">39 голосов</span>-->
-      <!--<label for="radio2" class="question-check">-->
-      <!--<input id="radio2" name="question" type="radio">-->
-      <!--<span class="checkmark"></span>-->
-      <!--</label>-->
-      <!--</div>-->
-      <!--<div id="var2" class="percent"></div>-->
-      <!--</li>-->
-      <!--<li class="question_variant" onclick="">-->
-      <!--<div class="var">От случая к случаю</div>-->
-      <!--<div id="pre_col_3" class="per_col">-->
-      <!--<span class="question-res">23 голосов</span>-->
-      <!--<label for="radio3" class="question-check">-->
-      <!--<input id="radio3" name="question" type="radio">-->
-      <!--<span class="checkmark"></span>-->
-      <!--</label>-->
-      <!--</div>-->
-      <!--<div id="var3" class="percent"></div>-->
-      <!--</li>-->
-      <!--<li class="question_variant" onclick="">-->
-      <!--<div class="var">Только прямые <br> эфиры мероприятий</div>-->
-      <!--<div id="pre_col_4" class="per_col">-->
-      <!--<span class="question-res" style="opacity: 1;">8 голосов</span>-->
-      <!--<label for="radio4" class="question-check" style="display: none;">-->
-      <!--<input id="radio4" name="question" type="radio">-->
-      <!--<span class="checkmark"></span>-->
-      <!--</label>-->
-      <!--</div>-->
-      <!--<div id="var4" class="percent" style="background: #f4a98c; width: 27%;"></div>-->
-      <!--</li>-->
-      <!--<li class="question_variant" onclick="">-->
-      <!--<div class="var">Не слушаю</div>-->
-      <!--<div id="pre_col_5" class="per_col">-->
-      <!--<span class="question-res">20 голосов</span>-->
-      <!--<label for="radio5" class="question-check">-->
-      <!--<input id="radio5" name="question" type="radio">-->
-      <!--<span class="checkmark"></span>-->
-      <!--</label>-->
-      <!--</div>-->
-      <!--<div id="var5" class="percent"></div>-->
-      <!--</li>-->
-      <!--</ul>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--<div class="countdown live-into" data-time="2018, 25, 9">-->
-        <!--<div class="countdown__text_live">-->
-          <!--<div class="live-part">-->
-            <!--<div class="live-part__circle"></div>-->
-            <!--<a href="#" class="live-part__text">Live</a>-->
-            <!--&lt;!&ndash; it can be hyperlink &ndash;&gt;-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--<div class="countdown__text-big">Слушайте специальный эфир к 9 мая прямо сейчас</div>-->
-      <!--</div>-->
-      <div class="countdown" data-time="2018, 25, 9">
-        <div class="countdown__text">ДО ГОНКИ</div>
-        <div class="countdown__text-big">
-          «6 ЧАСОВ СПА» FIA WEC
-        </div>
-        <div class="timer">
-          <span class="days"></span>
-          <span class="delimiter">:</span>
-          <span class="hours"></span>
-          <span class="delimiter">:</span>
-          <span class="minutes"></span>
-          <!--<span class="delimiter">:</span>-->
-          <!--<span class="seconds"></span>-->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-mobile">
-  <div class="content-promo-mobile">
-    <div class="slider-part">
-      <div class="item">
-        <a href="#" class="content-promo-mobile__text">
-            <span>
-              Главное спортивное событие лета!
-            </span>
-        </a>
-      </div>
-      <div class="item">
-        <a href="#" class="content-promo-mobile__text">
-          <span>G-Drive Racing победила в «Храме скорости»</span>
-        </a>
-      </div>
-      <div class="item">
-        <a href="#" class="content-promo-mobile__text">
-          <span>24 проекта наших коллег стали победителями волонтерского конкурса «Газпром нефти»</span>
-        </a>
-      </div>
-      <div class="item">
-        <a href="#" class="content-promo-mobile__text">
-          <span>G-Drive Racing – в шестерке сильнейших после первой гонки сезона ELMS</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!--<div id="makeMeScrollable" class="content-promo-mobile">-->
-  <!--<a href="#" class="content-promo-mobile__text">-->
-  <!--<span>-->
-  <!--Главное спортивное событие лета!-->
-  <!--</span>-->
-  <!--</a>-->
-  <!--<a href="#" class="content-promo-mobile__text">-->
-  <!--<span>G-Drive Racing победила в «Храме скорости»</span>-->
-  <!--</a>-->
-  <!--<a href="#" class="content-promo-mobile__text">-->
-  <!--<span>24 проекта наших коллег стали победителями волонтерского конкурса «Газпром нефти»</span>-->
-  <!--</a>-->
-  <!--<a href="#" class="content-promo-mobile__text">-->
-  <!--<span>G-Drive Racing – в шестерке сильнейших после первой гонки сезона ELMS</span>-->
-  <!--</a>-->
-  <!--</div>-->
-</section>
-
-<div class="stream main-page-stream">
-  <!-- <video id=stream-video class="video-js vjs-default-skin" poster="img/video1.jpg" controls>
-    <source
-            src="http://hls-01-megapolis.magonet.ru:80/megapolis/live.m3u8"
-            type="application/x-mpegURL">
-  </video> -->
-  <div class="embed-responsive embed-responsive-16by9 stream-wrapper"><i class="far fa-play-circle"></i></div>
-  <div class="embed-responsive embed-responsive-16by9 stream-embed" data-src='http://player.radio-box.org/v/megapolis/'>
-    <iframe src="" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" frameborder="0"></iframe>
-  </div>
-</div>
-
-<section class="news">
-  <div class="news__container">
-    <div class="news__category">
-      <h2 class="news__title">Новости</h2>
-      <a href="news-page.html" class="news__link">Все новости <img src="img/arrow.png" alt="news"></a>
-    </div>
-    <div class="row no-gutters news-grid justify-content-between">
-      <div class="news-grid__content">
-        <div class="news-grid__images--top">
-          <div class="icons-main-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 сентября</span>
+        <div class="news-grid__aside main-page__sidebar">
+          <article class="news-row">
+            <div class="icons-sidebar-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 мая</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
             </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <span class="news-grid__label">топ новость</span>
-          <div href="#" class="news-grid__text">
-            <span href="#" class="news-grid__tag">спорт</span>
-            <span href="#" class="news-grid__tag">спорт</span>
-            <span href="#" class="news-grid__tag">спорт</span>
-            <a href="#">G-Drive Racing готова к старту сезонаG-Drive Racing готова к старту сезона</a>
-          </div>
-          <a class="news-grid__link-img" href="#"><img src="img/main-image-top.jpg" alt="car"></a>
-        </div>
-        <div class="news-grid__images--item">
-          <div class="icons-main-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 мая</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <div class="news-grid__promo">
-            <a href="#"><img src="img/news1.png" alt="news"></a>
-          </div>
-          <div class="news-grid__description">
             <a href="#" class="news-grid__tag">спорт</a>
-            <a href="#" class="news-grid__text">
-              Волонтеры предприятий ДРП познакомили особенных детей
-              с адаптивными видами спорта
-            </a>
-          </div>
-        </div>
-        <div class="news-grid__images--item">
-          <div class="icons-main-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 сентября</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <div class="news-grid__promo">
-            <a href="#"><img src="img/news2.png" alt="news"></a>
-          </div>
-          <div class="news-grid__description">
-            <a href="#" class="news-grid__tag">спорт</a>
-            <a href="#" class="news-grid__text">
-              Топливо G-Drive 100 выходит
-              на рынок Центрального региона
-            </a>
-          </div>
-        </div>
-        <div class="news-grid__images--item">
-          <div class="icons-main-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 сентября</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <div class="news-grid__promo">
-            <a href="#"><img src="img/news3.png" alt="news"></a>
-          </div>
-          <div class="news-grid__description">
-            <a href="#" class="news-grid__tag">спорт</a>
-            <a href="#" class="news-grid__text">
-              На АЗС «Газпромнефть»
-              стартовала акция
-              «Рвани в Ле-Ман»
-            </a>
-          </div>
-        </div>
-        <div class="news-grid__images--item">
-          <div class="icons-main-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 сентября</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <div class="news-grid__promo">
-            <a href="#"><img src="img/news4.png" alt="news"></a>
-          </div>
-          <div class="news-grid__description">
-            <a href="#" class="news-grid__tag">спорт</a>
-            <a href="#" class="news-grid__text">
+            <a href="#" class="news-row__excerpt">
               G-Drive Racing – в шестерке
               сильнейших после первой гонки
               сезона ELMS
             </a>
-          </div>
+          </article>
+          <article class="news-row">
+            <div class="icons-sidebar-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 мая</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <a href="#" class="news-grid__tag">спорт</a>
+            <a href="#" class="news-row__excerpt">
+              Волонтеры предприятий ДРП
+              познакомили особенных детей
+              с адаптивными видами спорта
+            </a>
+          </article>
+          <article class="news-row">
+            <div class="icons-sidebar-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 мая</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <a href="#" class="news-grid__tag">спорт</a>
+            <a href="#" class="news-row__excerpt">
+              G-Drive Racing – в шестерке
+              сильнейших после первой гонки
+              сезона ELMS
+            </a>
+          </article>
+          <article class="news-row">
+            <div class="icons-sidebar-flex">
+              <div class="news-grid__images--icon">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>3 сентября</span>
+              </div>
+              <div class="news-grid__images--icon">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
+              </div>
+            </div>
+            <a href="#" class="news-grid__tag">спорт</a>
+            <a href="#" class="news-row__excerpt">
+              Волонтеры предприятий ДРП
+              познакомили особенных детей
+              с адаптивными видами спорта
+            </a>
+          </article>
         </div>
       </div>
-      <div class="news-grid__aside main-page__sidebar">
-        <article class="news-row">
-          <div class="icons-sidebar-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 мая</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <a href="#" class="news-grid__tag">спорт</a>
-          <a href="#" class="news-row__excerpt">
-            G-Drive Racing – в шестерке
-            сильнейших после первой гонки
-            сезона ELMS
-          </a>
-        </article>
-        <article class="news-row">
-          <div class="icons-sidebar-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 мая</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <a href="#" class="news-grid__tag">спорт</a>
-          <a href="#" class="news-row__excerpt">
-            Волонтеры предприятий ДРП
-            познакомили особенных детей
-            с адаптивными видами спорта
-          </a>
-        </article>
-        <article class="news-row">
-          <div class="icons-sidebar-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 мая</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <a href="#" class="news-grid__tag">спорт</a>
-          <a href="#" class="news-row__excerpt">
-            G-Drive Racing – в шестерке
-            сильнейших после первой гонки
-            сезона ELMS
-          </a>
-        </article>
-        <article class="news-row">
-          <div class="icons-sidebar-flex">
-            <div class="news-grid__images--icon">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>3 сентября</span>
-            </div>
-            <div class="news-grid__images--icon">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <a href="#" class="news-grid__tag">спорт</a>
-          <a href="#" class="news-row__excerpt">
-            Волонтеры предприятий ДРП
-            познакомили особенных детей
-            с адаптивными видами спорта
-          </a>
-        </article>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="video">
-  <div class="video__container">
-    <div class="video__category">
-      <h2 class="video__title">Видео</h2>
-      <a href="" class="video__link">Все видео <img src="img/arrow.png" alt="video"></a>
-    </div>
-    <div class="video__content">
-      <div class="video__viewport">
-        <div class="item-big">
-          <div class="icons-main-video-flex">
-            <div class="news-grid__images--icon countPeople">
-              <img class="icon-svg" src="img/clock.svg" alt="clock">
-              <span>1 сентября</span>
-            </div>
-            <div class="news-grid__images--icon videoDate">
-              <img class="icon-svg eye" src="img/eye.svg" alt="online">
-              <span>130</span>
-            </div>
-          </div>
-          <span class="news-grid__label topStatus">топ видео</span>
-          <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item video-current" id="video-current" src="video/videoplayback.mp4" type='video/mp4' poster="img/instagram.jpg" controls preload="auto"></video>
-          </div>
-        </div>
+  <section class="video">
+    <div class="video__container">
+      <div class="video__category">
+        <h2 class="video__title">Видео</h2>
+        <a href="" class="video__link">Все видео <img src="img/arrow.png" alt="video"></a>
       </div>
-      <div class="video__aside">
-        <div class="item-wrapper">
-          <div class="item">
-            <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video2.jpg" data-date="1 марта" data-count-people="10" data-top-status="1">
-              <div class="video__preview">
-                <img src="img/video2.jpg" alt="video">
+      <div class="video__content">
+        <div class="video__viewport">
+          <div class="item-big">
+            <div class="icons-main-video-flex">
+              <div class="news-grid__images--icon countPeople">
+                <img class="icon-svg" src="img/clock.svg" alt="clock">
+                <span>1 сентября</span>
               </div>
-              <div class="video__text">
-                Стало известно имя победителя главного новогоднего розыгрыша на G-Drive Radio
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video__row" data-video-src="video/dog.mp4" data-video-poster="img/video3.jpg" data-date="8 марта" data-count-people="10" data-top-status="">
-              <div class="video__preview">
-                <img src="img/video3.jpg" alt="video">
-              </div>
-              <div class="video__text">
-                Фестиваль «Искусство быть собой»
+              <div class="news-grid__images--icon videoDate">
+                <img class="icon-svg eye" src="img/eye.svg" alt="online">
+                <span>130</span>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video4.jpg" data-date="1 марта" data-count-people="10" data-top-status="">
-              <div class="video__preview">
-                <img src="img/video4.jpg" alt="video">
-              </div>
-              <div class="video__text">
-                Битва коммерсантов 2017
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video5.jpg" data-date="1 марта" data-count-people="10" data-top-status="">
-              <div class="video__preview">
-                <img src="img/video5.jpg" alt="video">
-              </div>
-              <div class="video__text">
-                Битва коммерсантов 2017
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video4.jpg" data-date="1 марта" data-count-people="10" data-top-status="">
-              <div class="video__preview">
-                <img src="img/video4.jpg" alt="video">
-              </div>
-              <div class="video__text">
-                Битва коммерсантов 2017
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video3.jpg" data-date="8 марта" data-count-people="10" data-top-status="">
-              <div class="video__preview">
-                <img src="img/video4.jpg" alt="video">
-              </div>
-              <div class="video__text">
-                Битва коммерсантов 2017
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/instagram.jpg" data-date="1 сентября" data-count-people="130" data-top-status="Топ видео">
-              <div class="video__preview">
-                <img src="img/video4.jpg" alt="video">
-              </div>
-              <div class="video__text">
-                Битва коммерсантов 2017
-              </div>
+            <span class="news-grid__label topStatus">топ видео</span>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item video-current" id="video-current" src="video/videoplayback.mp4" type='video/mp4' poster="img/instagram.jpg" controls preload="auto"></video>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="special">
-  <div class="special__container">
-    <h2 class="special__title">
-      Спец проект
-    </h2>
-    <div class="special-inner">
-      <div class="special__content">
-        <!--<img class="car" src="img/car.png" alt="car">-->
-        <div class="special-inner__title">
-          G-Drive Racing готова
-          к старту сезона
-        </div>
-        <div class="special-inner__text">
-          В минувшее воскресенье, 15 апреля, во французском Ле-Кастелле стартовал новый сезон Европейской серии Ле-Ман (ELMS).
-        </div>
-        <a href="#" class="special-inner__link"><span>Подробнее</span> <img src="img/arrow-right-white.png" alt="Подробнее"></a>
-      </div>
-      <div class="special__aside">
-        <div class="instagram">
-          <div class="instagram__title">
-            <img src="img/instagram.png" alt="instagram"><span>Инстаграм</span>
-          </div>
-          <div class="instagram__viewport">
+        <div class="video__aside">
+          <div class="item-wrapper">
             <div class="item">
-              <a href="#" class="instagram__avatar">
-                <img src="img/instagram.jpg" alt="instagram">
-              </a>
-              <div class="instagram__comments">
-                <div class="instagram__ellips">
-                  <div class="instagram__ellips-img">
-                    <img src="" alt="">
+              <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video2.jpg" data-date="1 марта" data-count-people="10" data-top-status="1">
+                <div class="video__preview">
+                  <img src="img/video2.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Стало известно имя победителя главного новогоднего розыгрыша на G-Drive Radio
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="video__row" data-video-src="video/dog.mp4" data-video-poster="img/video3.jpg" data-date="8 марта" data-count-people="10" data-top-status="">
+                <div class="video__preview">
+                  <img src="img/video3.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Фестиваль «Искусство быть собой»
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video4.jpg" data-date="1 марта" data-count-people="10" data-top-status="">
+                <div class="video__preview">
+                  <img src="img/video4.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Битва коммерсантов 2017
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video5.jpg" data-date="1 марта" data-count-people="10" data-top-status="">
+                <div class="video__preview">
+                  <img src="img/video5.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Битва коммерсантов 2017
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video4.jpg" data-date="1 марта" data-count-people="10" data-top-status="">
+                <div class="video__preview">
+                  <img src="img/video4.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Битва коммерсантов 2017
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/video3.jpg" data-date="8 марта" data-count-people="10" data-top-status="">
+                <div class="video__preview">
+                  <img src="img/video4.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Битва коммерсантов 2017
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="video__row" data-video-src="video/videoplayback.mp4" data-video-poster="img/instagram.jpg" data-date="1 сентября" data-count-people="130" data-top-status="Топ видео">
+                <div class="video__preview">
+                  <img src="img/video4.jpg" alt="video">
+                </div>
+                <div class="video__text">
+                  Битва коммерсантов 2017
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="special">
+    <div class="special__container">
+      <h2 class="special__title">
+        Спец проект
+      </h2>
+      <div class="special-inner">
+        <div class="special__content">
+          <!--<img class="car" src="img/car.png" alt="car">-->
+          <div class="special-inner__title">
+            G-Drive Racing готова
+            к старту сезона
+          </div>
+          <div class="special-inner__text">
+            В минувшее воскресенье, 15 апреля, во французском Ле-Кастелле стартовал новый сезон Европейской серии Ле-Ман (ELMS).
+          </div>
+          <a href="#" class="special-inner__link"><span>Подробнее</span> <img src="img/arrow-right-white.png" alt="Подробнее"></a>
+        </div>
+        <div class="special__aside">
+          <div class="instagram">
+            <div class="instagram__title">
+              <img src="img/instagram.png" alt="instagram"><span>Инстаграм</span>
+            </div>
+            <div class="instagram__viewport">
+              <div class="item">
+                <a href="#" class="instagram__avatar">
+                  <img src="img/instagram.jpg" alt="instagram">
+                </a>
+                <div class="instagram__comments">
+                  <div class="instagram__ellips">
+                    <div class="instagram__ellips-img">
+                      <img src="" alt="">
+                    </div>
+                    <!--<img src="img/photos1.png" alt="ellips" class="instagram__ellips-img">-->
+                    <a href="#" class="instagram__ellips-text">Osk_23</a>
                   </div>
-                  <!--<img src="img/photos1.png" alt="ellips" class="instagram__ellips-img">-->
-                  <a href="#" class="instagram__ellips-text">Osk_23</a>
+                  <div class="instagram__description">
+                    Волонтеры предприятий ДРП познакомили особенных детей
+                    с адаптивными видами спорта
+                  </div>
+                  <span class="instagram__hashtag hashtag">#gdriveradio</span>
+                  <span class="instagram__hashtag hashtag">#drive</span>
                 </div>
-                <div class="instagram__description">
-                  Волонтеры предприятий ДРП познакомили особенных детей
-                  с адаптивными видами спорта
-                </div>
-                <span class="instagram__hashtag hashtag">#gdriveradio</span>
-                <span class="instagram__hashtag hashtag">#drive</span>
               </div>
-            </div>
-            <div class="item">
-              <a href="#" class="instagram__avatar">
-                <img src="img/instagram.jpg" alt="instagram">
-              </a>
-              <div class="instagram__comments">
-                <div class="instagram__ellips">
-                  <div class="instagram__ellips-img"></div>
-                  <!--<img src="img/photos1.png" alt="ellips" class="instagram__ellips-img">-->
-                  <a href="#" class="instagram__ellips-text">Osk_23</a>
+              <div class="item">
+                <a href="#" class="instagram__avatar">
+                  <img src="img/instagram.jpg" alt="instagram">
+                </a>
+                <div class="instagram__comments">
+                  <div class="instagram__ellips">
+                    <div class="instagram__ellips-img"></div>
+                    <!--<img src="img/photos1.png" alt="ellips" class="instagram__ellips-img">-->
+                    <a href="#" class="instagram__ellips-text">Osk_23</a>
+                  </div>
+                  <div class="instagram__description">
+                    Волонтеры предприятий ДРП познакомились
+                  </div>
+                  <span href="" class="instagram__hashtag hashtag">#gdriveradio</span>
+                  <span href="" class="instagram__hashtag hashtag">#drive</span>
                 </div>
-                <div class="instagram__description">
-                  Волонтеры предприятий ДРП познакомились
-                </div>
-                <span href="" class="instagram__hashtag hashtag">#gdriveradio</span>
-                <span href="" class="instagram__hashtag hashtag">#drive</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="photos">
-  <div class="photos__container">
-    <div class="photos__title">
-      <div class="photos__title-text">Фото</div>
-      <div class="photos__link">
-        <a class="photos__link-wrap" href="photos-page.html">
-          <span>Все фото</span>
-          <img src="img/arrow-right-white.png" alt="Подробнее">
-        </a>
-      </div>
-    </div>
-    <div class="photos__content">
-      <div class="photos__item">
-        <div class="icons-main-flex">
-          <div class="photos__item--icon">
-            <img class="icon-svg" src="img/clock.svg" alt="clock">
-            <span>1 мая</span>
-          </div>
-          <div class="photos__item--icon">
-            <img class="icon-svg eye" src="img/eye.svg" alt="online">
-            <span>130</span>
-          </div>
+  <section class="photos">
+    <div class="photos__container">
+      <div class="photos__title">
+        <div class="photos__title-text">Фото</div>
+        <div class="photos__link">
+          <a class="photos__link-wrap" href="photos-page.html">
+            <span>Все фото</span>
+            <img src="img/arrow-right-white.png" alt="Подробнее">
+          </a>
         </div>
-        <div class="photos__item--icon download">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+      </div>
+      <div class="photos__content">
+        <div class="photos__item">
+          <div class="icons-main-flex">
+            <div class="photos__item--icon">
+              <img class="icon-svg" src="img/clock.svg" alt="clock">
+              <span>1 мая</span>
+            </div>
+            <div class="photos__item--icon">
+              <img class="icon-svg eye" src="img/eye.svg" alt="online">
+              <span>130</span>
+            </div>
+          </div>
+          <div class="photos__item--icon download">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
               <g>
                 <g>
                   <path d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64    c-6.272,0-11.968,3.68-14.56,9.376c-2.624,5.728-1.6,12.416,2.528,17.152l112,128c3.04,3.488,7.424,5.472,12.032,5.472    c4.608,0,8.992-2.016,12.032-5.472l112-128C384.192,245.824,385.152,239.104,382.56,233.376z" fill="#FFFFFF"/>
@@ -8647,30 +8622,30 @@
                 </g>
               </g>
             </svg>
-        </div>
-        <ul class="download-list">
-          <li class="download-list__item"><a class="download-list__link" href="#">Скачать альбом</a></li>
-          <li class="download-list__item"><a class="download-list__link" href="img/photos1.png" download>Скачать фото</a></li>
-        </ul>
-        <a href="#" class="photos__sticky-text">
-          Отборочные спарринги
-          по боксу
-        </a>
-        <img src="img/photos1.png" alt="photos">
-      </div>
-      <div class="photos__item">
-        <div class="icons-main-flex">
-          <div class="photos__item--icon">
-            <img class="icon-svg" src="img/clock.svg" alt="clock">
-            <span>1 мая</span>
           </div>
-          <div class="photos__item--icon">
-            <img class="icon-svg eye" src="img/eye.svg" alt="online">
-            <span>130</span>
-          </div>
+          <ul class="download-list">
+            <li class="download-list__item"><a class="download-list__link" href="#">Скачать альбом</a></li>
+            <li class="download-list__item"><a class="download-list__link" href="img/photos1.png" download>Скачать фото</a></li>
+          </ul>
+          <a href="#" class="photos__sticky-text">
+            Отборочные спарринги
+            по боксу
+          </a>
+          <img src="img/photos1.png" alt="photos">
         </div>
-        <div class="photos__item--icon download">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+        <div class="photos__item">
+          <div class="icons-main-flex">
+            <div class="photos__item--icon">
+              <img class="icon-svg" src="img/clock.svg" alt="clock">
+              <span>1 мая</span>
+            </div>
+            <div class="photos__item--icon">
+              <img class="icon-svg eye" src="img/eye.svg" alt="online">
+              <span>130</span>
+            </div>
+          </div>
+          <div class="photos__item--icon download">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
               <g>
                 <g>
                   <path d="M382.56,233.376C379.968,227.648,374.272,224,368,224h-64V16c0-8.832-7.168-16-16-16h-64c-8.832,0-16,7.168-16,16v208h-64    c-6.272,0-11.968,3.68-14.56,9.376c-2.624,5.728-1.6,12.416,2.528,17.152l112,128c3.04,3.488,7.424,5.472,12.032,5.472    c4.608,0,8.992-2.016,12.032-5.472l112-128C384.192,245.824,385.152,239.104,382.56,233.376z" fill="#FFFFFF"/>
@@ -8682,287 +8657,287 @@
                 </g>
               </g>
             </svg>
+          </div>
+          <ul class="download-list">
+            <li class="download-list__item"><a class="download-list__link" href="">Скачать альбом</a></li>
+            <li class="download-list__item"><a class="download-list__link" href="img/photos2.png" download>Скачать фото</a></li>
+          </ul>
+          <a href="#" class="photos__sticky-text">
+            Открытие пространства «Лекторий»
+          </a>
+          <img src="img/photos2.png" alt="photos">
         </div>
-        <ul class="download-list">
-          <li class="download-list__item"><a class="download-list__link" href="">Скачать альбом</a></li>
-          <li class="download-list__item"><a class="download-list__link" href="img/photos2.png" download>Скачать фото</a></li>
-        </ul>
-        <a href="#" class="photos__sticky-text">
-          Открытие пространства «Лекторий»
-        </a>
-        <img src="img/photos2.png" alt="photos">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="footer">
-  <div class="footer__container">
-    <div class="footer__logo">
-      <a href="#"><img src="img/logo.svg" alt="logotype"></a>
-    </div>
-    <ul class="footer-list">
-      <li class="footer-list__item">
-        <div class="">
-          <div class="">Эфир «G-DRIVE RADIO»:</div>
-          <div class="footer-list__item--telephone">
-            <a class="footer-list__item--telephone-number" href="tel: 8 800 200 11 06">8 800 200-11-06</a>
-            <a class="footer-list__item--telephone-link" href="mailto: privet@g-drive.media">privet@g-drive.media</a>
-          </div>
-        </div>
-      </li>
-      <li class="footer-list__item">
-        <div class="footer-list__item--telephone">Тех поддержка:</div>
-        <a href="mailto: tech@megapolismedia.ru" class="footer-list__item--telephone">tech@megapolismedia.ru</a>
-      </li>
-      <li class="footer-list__item">
-        <a href="https://t-do.ru/joinchat/AAAAAENKCfYXgqQUsMXlEQ" target="_blank" class="footer-list__item--telegram footer-list-telegram">
-          <div class="footer-list-telegram-wrap">
-            <span class="footer-list-telegram__text">Телеграм - канал</span>
-            <span class="footer-list-telegram__text">"Надежный ориентир"</span>
-          </div>
-          <div class="footer-list-telegram-wrap">
-            <img src="img/tlg_ico.png" alt="telegram">
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-bottom">
+  <footer class="footer">
     <div class="footer__container">
-      <div class="footer-bottom__text">
-        Корпоративный медиапортал дирекции региональных продаж «Газпром нефть»
+      <div class="footer__logo">
+        <a href="#"><img src="img/logo.svg" alt="logotype"></a>
       </div>
-    </div>
-  </div>
-</footer>
-
-<!--<div id="writeModal" class="modal fade" role="dialog">-->
-<!--<div class="modal-dialog">-->
-<!--&lt;!&ndash; Modal content&ndash;&gt;-->
-<!--<div class="modal-content">-->
-<!--<div class="modal-header">-->
-<!--<a class="modal-header__logo">-->
-<!--<img src="img/logo.svg" alt="logo" class="modal-header__logo&#45;&#45;icon">-->
-<!--</a>-->
-<!--<div class="modal-header__title">Написать в эфир</div>-->
-<!--<img src="img/close.png" alt="close" class="close" data-dismiss="modal">-->
-<!--</div>-->
-<!--<div class="modal-body">-->
-<!--<div class="form-write">-->
-<!--<form>-->
-<!--<div class="form-write__row">-->
-<!--<input type="text" class="form-write__name" placeholder="Ваше имя">-->
-<!--</div>-->
-<!--<div class="form-write__row">-->
-<!--<textarea name="" id="" cols="30" rows="10" class="form-write__text" placeholder="Введите текст"></textarea>-->
-<!--</div>-->
-<!--<div class="form-write__row">-->
-<!--<a href="#" class="form-write__send">Отправить</a>-->
-<!--</div>-->
-<!--</form>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<div id="searchModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <img src="img/close.png" alt="close" class="close" data-dismiss="modal">
-      </div>
-      <div class="modal-body">
-        <div class="search-page">
-          <input type="text" class="input-search" placeholder="поиск...">
-          <button class="image-search image-search-btn"><img class="image-search__icon" src="img/search_white.svg" alt="search"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="menuModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="header-mobile__location header__location">
-          <img src="img/location.png" alt="location" class="header__location-img">
-          <div class="header__location-name"></div>
-        </div>
-        <div class="header-mobile__listen header__listen">
-          <div class="header__listen-digits">500</div>
-          <div class="header__listen-text">Слушателей онлайн</div>
-        </div>
-        <img src="img/close.png" alt="close" class="close" data-dismiss="modal">
-      </div>
-      <div class="modal-body">
-        <ul class="navigation">
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Новости</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Фото</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Видео</a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">Подкасты</a>
-          </li>
-        </ul>
-        <div class="search-page search-page-mobile">
-          <input type="text" class="input-search" placeholder="поиск...">
-          <button class="image-search image-search-btn"><img class="image-search__icon" src="img/search_white.svg" alt="search"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div style="display: none;" id="congratModal" class="congratModal" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-header__text">Поздравление</div>
-        <!--<img src="img/close.png" alt="close" class="close">-->
-      </div>
-      <div class="modal-body">
-        <div class="congratulation">
-          <div class="congratulation__text">
-            Поздравляем, <span class="congratulation__text-name"></span>
-          </div>
-          <div class="congratulation__row">
-            <textarea name="congrat" class="congratulations-textarea" maxlength="150">Прошу передать замечательному начальнику и просто хорошему человеку от Эльвиры поздравления</textarea>
-          </div>
-          <div class="congratulation__row text-center">
-            <a href="" class="congratulation__send">Отправить</a>
-          </div>
-          <input type="text" value="" class="input-congrat" data-id="" style="display: none;">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div style="display: none;" id="congratModalResponse" class="congratModal congratModalResponse" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-header__text">Поздравление</div>
-        <!--<img src="img/close.png" alt="close" class="close">-->
-      </div>
-      <div class="modal-body">
-        <div class="congratulation">
-          <!--<img src="img/mess-send.png" class="congratulation__icon-okay" alt="okay">-->
-          <div class="congratulation__text">
-            Ваше поздравление успешно отправлено !
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div style="display: none;" id="writeModal" class="congratModal efirModal" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <a class="modal-header__logo">
-          <img src="img/logo.svg" alt="logo" class="modal-header__logo--icon">
-        </a>
-        <div class="modal-header__title">Написать в эфир</div>
-        <!--<img src="img/close.png" alt="close" class="close" data-dismiss="modal">-->
-      </div>
-      <div class="modal-body">
-        <div class="form-write">
-          <form>
-            <div class="form-write__row">
-              <input type="text" class="form-write__name" placeholder="Ваше имя">
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          <div class="">
+            <div class="">Эфир «G-DRIVE RADIO»:</div>
+            <div class="footer-list__item--telephone">
+              <a class="footer-list__item--telephone-number" href="tel: 8 800 200 11 06">8 800 200-11-06</a>
+              <a class="footer-list__item--telephone-link" href="mailto: privet@g-drive.media">privet@g-drive.media</a>
             </div>
-            <div class="form-write__row">
-              <textarea name="" id="" cols="30" rows="10" class="form-write__text" placeholder="Введите текст"></textarea>
+          </div>
+        </li>
+        <li class="footer-list__item">
+          <div class="footer-list__item--telephone">Тех поддержка:</div>
+          <a href="mailto: tech@megapolismedia.ru" class="footer-list__item--telephone">tech@megapolismedia.ru</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="https://t-do.ru/joinchat/AAAAAENKCfYXgqQUsMXlEQ" target="_blank" class="footer-list__item--telegram footer-list-telegram">
+            <div class="footer-list-telegram-wrap">
+              <span class="footer-list-telegram__text">Телеграм - канал</span>
+              <span class="footer-list-telegram__text">"Надежный ориентир"</span>
             </div>
-            <div class="form-write__row">
-              <a href="#" class="form-write__send">Отправить</a>
+            <div class="footer-list-telegram-wrap">
+              <img src="img/tlg_ico.png" alt="telegram">
             </div>
-          </form>
-          <input type="text" value="" class="input-efir" data-id="" style="display: none;">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer__container">
+        <div class="footer-bottom__text">
+          Корпоративный медиапортал дирекции региональных продаж «Газпром нефть»
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div style="display: none;" id="writeModalResponse" class="congratModal efirModal efirModalResponse" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <div class="modal-header__text">Сообщение</div>
-        <!--<img src="img/close.png" alt="close" class="close">-->
-      </div>
-      <div class="modal-body">
-        <div class="congratulation">
-          <!--<img src="img/mess-send.png" class="congratulation__icon-okay" alt="okay">-->
-          <div class="congratulation__text">
-            Ваше сообщение успешно отправлено !
+  </footer>
+
+  <!--<div id="writeModal" class="modal fade" role="dialog">-->
+    <!--<div class="modal-dialog">-->
+      <!--&lt;!&ndash; Modal content&ndash;&gt;-->
+      <!--<div class="modal-content">-->
+        <!--<div class="modal-header">-->
+          <!--<a class="modal-header__logo">-->
+            <!--<img src="img/logo.svg" alt="logo" class="modal-header__logo&#45;&#45;icon">-->
+          <!--</a>-->
+          <!--<div class="modal-header__title">Написать в эфир</div>-->
+          <!--<img src="img/close.png" alt="close" class="close" data-dismiss="modal">-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+          <!--<div class="form-write">-->
+            <!--<form>-->
+              <!--<div class="form-write__row">-->
+                <!--<input type="text" class="form-write__name" placeholder="Ваше имя">-->
+              <!--</div>-->
+              <!--<div class="form-write__row">-->
+                <!--<textarea name="" id="" cols="30" rows="10" class="form-write__text" placeholder="Введите текст"></textarea>-->
+              <!--</div>-->
+              <!--<div class="form-write__row">-->
+                <!--<a href="#" class="form-write__send">Отправить</a>-->
+              <!--</div>-->
+            <!--</form>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <div id="searchModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="img/close.png" alt="close" class="close" data-dismiss="modal">
+        </div>
+        <div class="modal-body">
+          <div class="search-page">
+            <input type="text" class="input-search" placeholder="поиск...">
+            <button class="image-search image-search-btn"><img class="image-search__icon" src="img/search_white.svg" alt="search"></button>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="podkast stream-player">
-  <div class="podkast__container">
-    <div class="podkast-data">
-      <div class="podkast__image"></div>
-      <div class="podkast-data-inner">
-        <div class="podkast__author"></div>
-        <div class="podkast__song"></div>
+  <div id="menuModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="header-mobile__location header__location">
+            <img src="img/location.png" alt="location" class="header__location-img">
+            <div class="header__location-name"></div>
+          </div>
+          <div class="header-mobile__listen header__listen">
+            <div class="header__listen-digits">500</div>
+            <div class="header__listen-text">Слушателей онлайн</div>
+          </div>
+          <img src="img/close.png" alt="close" class="close" data-dismiss="modal">
+        </div>
+        <div class="modal-body">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Фото</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Видео</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">Подкасты</a>
+            </li>
+          </ul>
+          <div class="search-page search-page-mobile">
+            <input type="text" class="input-search" placeholder="поиск...">
+            <button class="image-search image-search-btn"><img class="image-search__icon" src="img/search_white.svg" alt="search"></button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="podkast__track">
-      <div class="podkast-btn"></div>
-      <!--<input type="range" id="seek" class="seekbar" value="0" min="0" max="100" />-->
-      <div id="seek" class="seekbar"></div>
-    </div>
-    <div class="podkast__time">
-      <div class="start"></div>
-      <div class="end"></div>
-    </div>
-    <div class="podkast__stream-btn"></div>
-    <div class="podkast__volume">
-      <img src="img/volume-icon.png" alt="volume-stop" class="volume-stop">
-      <!--<input id="volumeslider" class="volumeslider" type="range" min="0" max="100" value="100" step="1">-->
-      <div class="volumeslider"></div>
+  </div>
+  <div style="display: none;" id="congratModal" class="congratModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-header__text">Поздравление</div>
+          <!--<img src="img/close.png" alt="close" class="close">-->
+        </div>
+        <div class="modal-body">
+          <div class="congratulation">
+            <div class="congratulation__text">
+              Поздравляем, <span class="congratulation__text-name"></span>
+            </div>
+            <div class="congratulation__row">
+              <textarea name="congrat" class="congratulations-textarea" maxlength="150">Прошу передать замечательному начальнику и просто хорошему человеку от Эльвиры поздравления</textarea>
+            </div>
+            <div class="congratulation__row text-center">
+              <a href="" class="congratulation__send">Отправить</a>
+            </div>
+            <input type="text" value="" class="input-congrat" data-id="" style="display: none;">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <div style="display: none;" id="congratModalResponse" class="congratModal congratModalResponse" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-header__text">Поздравление</div>
+          <!--<img src="img/close.png" alt="close" class="close">-->
+        </div>
+        <div class="modal-body">
+          <div class="congratulation">
+            <!--<img src="img/mess-send.png" class="congratulation__icon-okay" alt="okay">-->
+            <div class="congratulation__text">
+              Ваше поздравление успешно отправлено !
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;" id="writeModal" class="congratModal efirModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <a class="modal-header__logo">
+            <img src="img/logo.svg" alt="logo" class="modal-header__logo--icon">
+          </a>
+          <div class="modal-header__title">Написать в эфир</div>
+          <!--<img src="img/close.png" alt="close" class="close" data-dismiss="modal">-->
+        </div>
+        <div class="modal-body">
+          <div class="form-write">
+            <form>
+              <div class="form-write__row">
+                <input type="text" class="form-write__name" placeholder="Ваше имя">
+              </div>
+              <div class="form-write__row">
+                <textarea name="" id="" cols="30" rows="10" class="form-write__text" placeholder="Введите текст"></textarea>
+              </div>
+              <div class="form-write__row">
+                <a href="#" class="form-write__send">Отправить</a>
+              </div>
+            </form>
+            <input type="text" value="" class="input-efir" data-id="" style="display: none;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;" id="writeModalResponse" class="congratModal efirModal efirModalResponse" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-header__text">Сообщение</div>
+          <!--<img src="img/close.png" alt="close" class="close">-->
+        </div>
+        <div class="modal-body">
+          <div class="congratulation">
+            <!--<img src="img/mess-send.png" class="congratulation__icon-okay" alt="okay">-->
+            <div class="congratulation__text">
+              Ваше сообщение успешно отправлено !
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/main-page-timer.js"></script>
-<script src="js/main-congrat-slider.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-<script src="js/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/mobile-content-promo.js"></script>
-<script src="js/instagram-widget.js"></script>
-<script src="js/download.js"></script>
-<script src="js/main-page-video.js"></script>
-<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="js/jquery.mousewheel.min.js"></script>
-<script src="js/jquery.kinetic.min.js"></script>
-<script src="js/jquery.smoothdivscroll-1.3-min.js"></script>
-<script src="js/main-page-scrollable.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/playlist.js"></script>
-<!-- <script src="https://unpkg.com/video.js/dist/video.js"></script> -->
-<!-- <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script> -->
-<script src="js/stream.js"></script>
-<script src="js/connectToApi.js"></script>
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ"></script>-->
+  <div class="podkast stream-player">
+    <div class="podkast__container">
+      <div class="podkast-data">
+        <div class="podkast__image"></div>
+        <div class="podkast-data-inner">
+          <div class="podkast__author"></div>
+          <div class="podkast__song"></div>
+        </div>
+      </div>
+      <div class="podkast__track">
+        <div class="podkast-btn"></div>
+        <!--<input type="range" id="seek" class="seekbar" value="0" min="0" max="100" />-->
+        <div id="seek" class="seekbar"></div>
+      </div>
+      <div class="podkast__time">
+        <div class="start"></div>
+        <div class="end"></div>
+      </div>
+      <div class="podkast__stream-btn"></div>
+      <div class="podkast__volume">
+        <img src="img/volume-icon.png" alt="volume-stop" class="volume-stop">
+        <!--<input id="volumeslider" class="volumeslider" type="range" min="0" max="100" value="100" step="1">-->
+        <div class="volumeslider"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main-page-timer.js"></script>
+  <script src="js/main-congrat-slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+  <script src="js/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/mobile-content-promo.js"></script>
+  <script src="js/instagram-widget.js"></script>
+  <script src="js/download.js"></script>
+  <script src="js/main-page-video.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery.kinetic.min.js"></script>
+  <script src="js/jquery.smoothdivscroll-1.3-min.js"></script>
+  <script src="js/main-page-scrollable.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/playlist.js"></script>
+  <!-- <script src="https://unpkg.com/video.js/dist/video.js"></script> -->
+  <!-- <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script> -->
+  <script src="js/stream.js"></script>
+  <script src="js/connectToApi.js"></script>
+  <!--<script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ"></script>-->
 
 </body>
 </html>

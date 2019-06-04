@@ -52,6 +52,82 @@
   //   }
   // });
   /*/ MUTED */
+
+  /*видео трансляция возле карты*/
+  $('.header__map').on("click", '.stream-wrapper', function() {
+    $(this).hide();
+    let ifr = $(this).next();
+    ifr.css('display', 'block');
+    ifr.find('iframe').attr('src', 'http://player.radio-box.org/v/megapolis/');
+
+    let liveAudio =  $('.icon-pause').closest('.header__live').find('audio')[0];
+    //Actions when video play selected
+    if (liveAudio) {
+      liveAudio.pause();
+      // settimeout, otherwise pause event is not raised normally
+      setTimeout(function () {
+        liveAudio.load(); // This stops the stream from downloading
+      }, 1000);
+      clearInterval(timerSong);
+      /* delete podkast */
+      podkast.find('.podkast__image img').remove();
+      podkast.find('.podkast-btn').html('');
+
+      podkast.removeClass('podkast-active');
+    }
+
+    $('.icon-pause').closest('.header__live').find('audio').attr('src', '');
+
+    $('.icon-default').removeClass('icon-pause');
+    $('.icon-default').addClass('icon-play');
+
+    $('#video-current').get(0).pause();
+    // $('#video-current').get(0).currentTime=0;
+
+    $('.stream iframe').attr('src', '');
+    $('.stream .stream-wrapper').css('display', 'block');
+    $('.main-page-video-trans iframe').attr('src', '');
+    $('.main-page-video-trans .stream-wrapper').css('display', 'block');
+  });
+  /*видео трансляция возле карты*/
+  /*видео трансляция которая была на карте*/
+  $('.main-page-video-trans').on("click", '.stream-wrapper', function() {
+    $(this).hide();
+    let ifr = $(this).next();
+    ifr.css('display', 'block');
+    ifr.find('iframe').attr('src', 'http://player.radio-box.org/v/megapolis/');
+
+    let liveAudio =  $('.icon-pause').closest('.header__live').find('audio')[0];
+    //Actions when video play selected
+    if (liveAudio) {
+      liveAudio.pause();
+      // settimeout, otherwise pause event is not raised normally
+      setTimeout(function () {
+        liveAudio.load(); // This stops the stream from downloading
+      }, 1000);
+      clearInterval(timerSong);
+      /* delete podkast */
+      podkast.find('.podkast__image img').remove();
+      podkast.find('.podkast-btn').html('');
+
+      podkast.removeClass('podkast-active');
+    }
+
+    $('.icon-pause').closest('.header__live').find('audio').attr('src', '');
+
+    $('.icon-default').removeClass('icon-pause');
+    $('.icon-default').addClass('icon-play');
+
+    $('#video-current').get(0).pause();
+    // $('#video-current').get(0).currentTime=0;
+
+    $('.stream iframe').attr('src', '');
+    $('.stream .stream-wrapper').css('display', 'block');
+    $('.header__map iframe').attr('src', '');
+    $('.header__map .stream-wrapper').css('display', 'block');
+  });
+  /*видео трансляция которая была на карте*/
+  /*видео трансляция на странице*/
   $('.stream').on("click", '.stream-wrapper', function() {
     $(this).hide();
     let ifr = $(this).next();
@@ -72,8 +148,8 @@
       podkast.find('.podkast-btn').html('');
 
       podkast.removeClass('podkast-active');
-
     }
+    /*видео трансляция на странице*/
 
     $('.icon-pause').closest('.header__live').find('audio').attr('src', '');
 
@@ -82,6 +158,11 @@
 
     $('#video-current').get(0).pause();
     // $('#video-current').get(0).currentTime=0;
+
+    $('.header__map iframe').attr('src', '');
+    $('.header__map .stream-wrapper').css('display', 'block');
+    $('.main-page-video-trans iframe').attr('src', '');
+    $('.main-page-video-trans .stream-wrapper').css('display', 'block');
   });
 
 
@@ -91,6 +172,7 @@
     $('.stream-wrapper').css('display', 'block');
     playAll(this);
     podkastMode(this);
+
   });
 
   $(videoMainPage).on('play', function() {
@@ -174,7 +256,7 @@
 
     clearInterval(timerSong);
 
-    if ($('.icon-pause').closest('.header__live ').length) {
+    if ($('.icon-pause').closest('.header__live ').length && !$('.icon-pause').hasClass('video-translation')) {
       let liveAudio =  $('.icon-pause').closest('.header__live ').find('audio')[0];
       liveAudio.pause();
       // settimeout, otherwise pause event is not raised normally
@@ -299,8 +381,8 @@
         }
       } else {
         console.log('если ничего не подошло');
-        $(that).parent('div').parent('div').find('audio').trigger('play');
-        $(that).parent('div').parent('div').find('audio')[0].currentTime = 0;
+        // $(that).parent('div').parent('div').find('audio').trigger('play');
+        // $(that).parent('div').parent('div').find('audio')[0].currentTime = 0;
       }
 
     } else {

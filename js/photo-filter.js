@@ -14,6 +14,8 @@ noUiSlider.create(dateSlider, {
     max: timestamp('10.08.2018')
   },
 
+  behaviour: "tap-drag",
+
 // Steps of one week
   step: 7 * 24 * 60 * 60 * 1000,
 
